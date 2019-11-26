@@ -1,4 +1,4 @@
-¨var gameData = {
+var gameData = {
   gold: 0,
   goldPerClick: 1,
   goldPerClickCost: 10
@@ -22,4 +22,3 @@ function buyGoldPerClick() {
 var mainGameLoop = window.setInterval(function() {
   mineGold()
 }, 1000)
-
