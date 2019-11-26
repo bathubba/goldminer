@@ -1,4 +1,4 @@
-var gameData = {
+¨var gameData = {
   gold: 0,
   goldPerClick: 1,
   goldPerClickCost: 10
@@ -22,3 +22,12 @@ function buyGoldPerClick() {
 var mainGameLoop = window.setInterval(function() {
   mineGold()
 }, 1000)
+
+var saveGameLoop = window.setInterval(function() {
+  localStorage.setItem('goldMinerSave', JSON.stringify(gameData))
+}, 15000)
+
+var savegame = JSON.parse(localStorage.getItem("goldMinerSave"))
+if (savegame !== null) {
+  gameData = savegame
+}
