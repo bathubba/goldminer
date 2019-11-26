@@ -23,11 +23,3 @@ var mainGameLoop = window.setInterval(function() {
   mineGold()
 }, 1000)
 
-var saveGameLoop = window.setInterval(function() {
-  localStorage.setItem('goldMinerSave', JSON.stringify(gameData))
-}, 15000)
-
-var savegame = JSON.parse(localStorage.getItem("goldMinerSave"))
-if (savegame !== null) {
-  gameData = savegame
-}
