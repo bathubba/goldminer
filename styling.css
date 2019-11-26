@@ -1,0 +1,17 @@
+html {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+#goldMined {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+}
